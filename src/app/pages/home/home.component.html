@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<div class="home">
+    <div class="container" *ngFor='let p of seleccionFotos.photos'>
+        <div class="card">
+            <div class="up">
+                <h1>{{p.photographer}}</h1>
+            </div>
+            <div class="down">
+                {{p.url}}
+                <img [src]=p.url alt="">
+            </div>
+        </div>
+    </div>
+</div>
